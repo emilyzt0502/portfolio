@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily's Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+
+<body>
+    <button id="back-btn" class="back-btn" onclick="navigateTo('home')" style="display: none;">← Back</button>
+    <div id="transition-overlay" class="transition-overlay"></div>
+    <div id="camera">
+        <div id="world">
+            <!-- Zone 1: Home Scene -->
+            <div id="scene-home" class="scene">
+                <div class="wall"></div>
+                <div class="floor"></div>
+                <h1 class="title">Emily's Workspace</h1>
+                <nav class="nav-buttons">
+                    <button class="nav-btn nav-experience" onclick="navigateTo('experience')">Experience</button>
+                    <button class="nav-btn nav-projects" onclick="navigateTo('projects')">Projects</button>
+                    <button class="nav-btn nav-activities" onclick="navigateTo('activities')">Activities</button>
+                    <button class="nav-btn nav-contact" onclick="navigateTo('contact')">Contact</button>
+                </nav>
+                <div class="desk-container">
+                    <div class="desk">
+                        <div class="desk-top"></div>
+                        <div class="desk-front"></div>
+                        <div class="desk-leg leg-1"></div>
+                        <div class="desk-leg leg-2"></div>
+                        <div class="desk-leg leg-3"></div>
+                        <div class="desk-leg leg-4"></div>
+                    </div>
+                    <div class="desk-objects">
+                        <div id="monitor" class="monitor floating" onclick="navigateTo('experience')">
+                            <div class="monitor-body">
+                                <div class="monitor-screen">
+                                    <div class="screen-content">
+                                        <span class="terminal-text">> Hello, World!</span>
+                                        <span class="cursor-block"></span>
+                                    </div>
+                                </div>
+                                <div class="monitor-disk-slot"></div>
+                                <div class="monitor-logo"></div>
+                                <div class="monitor-side"></div>
+                                <div class="monitor-vents"></div>
+                            </div>
+                            <div class="monitor-base"></div>
+                        </div>
+                        <div class="desk-lamp floating">
+                            <div class="lamp-base"></div>
+                            <div class="lamp-post"></div>
+                            <div class="lamp-joint"></div>
+                            <div class="lamp-shade"></div>
+                            <div class="lamp-glow"></div>
+                        </div>
+                        <div class="cactus-plant floating">
+                            <div class="cactus-pot"></div>
+                            <div class="cactus-body"></div>
+                            <div class="cactus-arm arm-left"></div>
+                            <div class="cactus-arm arm-right"></div>
+                        </div>
+                        <div class="book-stack floating">
+                            <div class="book book-1"></div>
+                            <div class="book book-2"></div>
+                            <div class="book book-3"></div>
+                        </div>
+                        <div class="pencil-case floating">
+                            <div class="case-body"></div>
+                            <div class="case-zipper"></div>
+                        </div>
+                        <div class="yarn-ball floating">
+                            <div class="yarn-body"></div>
+                            <div class="yarn-strand strand-1"></div>
+                            <div class="yarn-strand strand-2"></div>
+                        </div>
+                        <div class="water-bottle floating">
+                            <div class="bottle-body"></div>
+                            <div class="bottle-cap"></div>
+                            <div class="bottle-label"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zone 2: Experience Scene -->
+            <div id="scene-experience" class="scene">
+                <div class="wall"></div>
+                <div class="floor"></div>
+                <div class="terminal-window-container">
+                    <div class="terminal-window">
+                        <div class="terminal-titlebar">
+                            <div class="traffic-lights">
+                                <div class="traffic-light traffic-red"></div>
+                                <div class="traffic-light traffic-yellow"></div>
+                                <div class="traffic-light traffic-green"></div>
+                            </div>
+                            <div class="terminal-title-text">emily@workspace ~</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-overlay"></div>
+                            <div class="terminal-content" id="terminal-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zone 3: Projects Scene -->
+            <div id="scene-projects" class="scene">
+                <div class="wall"></div>
+                <div class="floor"></div>
+                <div class="cabinet-closeup">
+                    <h2 class="projects-title">Projects</h2>
+                    <div class="cabinet-body-large">
+                        <div class="cabinet-front-large"></div>
+                        <div class="cabinet-side-large"></div>
+                    </div>
+                    <div class="folders-container">
+                        <!-- Folder 1: Plato -->
+                        <div class="folder folder-1" data-folder="0">
+                            <div class="folder-tab">Plato</div>
+                            <div class="folder-body">
+                                <div class="folder-content">
+                                    <h3>Plato: Your Adaptive Learning Friend</h3>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">FastAPI</span>
+                                        <span class="tech-tag">PyTorch</span>
+                                        <span class="tech-tag">AgentVerse</span>
+                                        <span class="tech-tag">January 2026</span>
+                                    </div>
+                                    <p>Built a modular on-screen learning agent using Python and PyTorch that observes
+                                        user interaction patterns and infers mastery in real time via Bayesian Knowledge
+                                        Tracing, enabling reasoning about when and how to intervene without explicit
+                                        prompts. Orchestrated three specialized agents through an AgentVerse
+                                        coordination layer, allowing the system to dynamically select interventions that
+                                        optimize learning effectiveness while minimizing disruption.</p>
+                                    <a href="#" class="github-link">GitHub →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Folder 2: Policy Lens -->
+                        <div class="folder folder-2" data-folder="1">
+                            <div class="folder-tab">Policy Lens</div>
+                            <div class="folder-body">
+                                <div class="folder-content">
+                                    <h3>Policy Lens: Multi-Objective Optimization Tool</h3>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">December 2025</span>
+                                    </div>
+                                    <p>Developed an interactive decision-support system to model tradeoffs between
+                                        competing objectives, implementing a weighted-sum scalarization algorithm in a
+                                        Node.js + PostgreSQL backend to reason over constraint changes in real time.
+                                        Designed a custom state-management pipeline that recalculates outcomes as inputs
+                                        shift, enabling users to explore policy scenarios with immediate feedback.</p>
+                                    <a href="#" class="github-link">GitHub →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Folder 3: Bioactivity -->
+                        <div class="folder folder-3" data-folder="2">
+                            <div class="folder-tab">Bioactivity</div>
+                            <div class="folder-body">
+                                <div class="folder-content">
+                                    <h3>Bioactivity Predictive Modeling in Gaucher Disease</h3>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">XGBoost</span>
+                                        <span class="tech-tag">FastAPI</span>
+                                        <span class="tech-tag">September 2025</span>
+                                    </div>
+                                    <p>Trained and evaluated 40+ gradient-boosted models using XGBoost to predict
+                                        compound pIC50 bioactivity values with 76% accuracy, applying cross-validation
+                                        and feature importance analysis to reason about molecular drivers of efficacy.
+                                        Built visualization pipelines with Matplotlib and Seaborn to surface descriptor
+                                        correlations, supporting hypothesis-driven drug discovery decisions.</p>
+                                    <a href="#" class="github-link">GitHub →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Folder 4: NP3 Pi-Rates -->
+                        <div class="folder folder-4" data-folder="3">
+                            <div class="folder-tab">NP3 Pi-Rates</div>
+                            <div class="folder-body">
+                                <div class="folder-content">
+                                    <h3>NP3 Pi-Rates: Math Learning Platform</h3>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">2024</span>
+                                    </div>
+                                    <p>Built a web-based learning platform to deliver class-specific lesson and homework
+                                        support, reasoning over course structure to tailor resources to student needs
+                                        across different math tracks. Designed to scale across classrooms, increasing
+                                        math resource accessibility for 240 students across 8 classes while reducing
+                                        friction in finding aligned practice materials.</p>
+                                    <a href="#" class="github-link">GitHub →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zone 4: Activities Scene -->
+            <div id="scene-activities" class="scene">
+                <div class="desk-top-view">
+                    <div class="desk-surface"></div>
+                    <img id="trophy-component" src="trophy.png" alt="Trophy" class="desk-object activity-img"
+                        onclick="openActivityModal('trophy')">
+                    <img id="headphones-component" src="headphones.png" alt="Headphones"
+                        class="desk-object activity-img" onclick="openActivityModal('headphones')">
+                    <img id="notebook-component" src="notebook.png" alt="Notebook" class="desk-object activity-img"
+                        onclick="openActivityModal('notebook')">
+                    <img id="screwdriver-component" src="screwdriver.png" alt="Screwdriver"
+                        class="desk-object activity-img" onclick="openActivityModal('screwdriver')">
+                    <img id="caterpillar-component" src="catepillar.png" alt="Caterpillar"
+                        class="desk-object activity-img" onclick="openActivityModal('caterpillar')">
+                    <img id="mahjong-component" src="mahjong.png" alt="Mahjong" class="desk-object activity-img"
+                        onclick="openActivityModal('mahjong')">
+                </div>
+            </div>
+
+            <!-- Zone 5: Contact Scene -->
+            <div id="scene-contact" class="scene">
+                <div class="wall-textured"></div>
+                <div class="floor"></div>
+                <div id="photo-frame-component" class="frame frame-1">
+                    <div class="frame-border-outer"></div>
+                    <div class="frame-border-inner"></div>
+                    <div class="frame-content">
+                        <img src="headshot.jpg" alt="Emily Do" class="headshot-img">
+                    </div>
+                    <div class="pushpin"></div>
+                </div>
+                <div id="contact-notepad-component" class="frame frame-2">
+                    <div class="notepad">
+                        <div class="notepad-content">
+                            <h3>Emily Do</h3>
+                            <div class="divider"></div>
+                            <a href="mailto:emilydo@stanford.edu" class="contact-link">✉ emilydo@stanford.edu</a>
+                            <a href="https://www.linkedin.com/in/emdo/" target="_blank" class="contact-link">in
+                                linkedin.com/in/emdo</a>
+                            <p class="connect-text">Let's connect!</p>
+                        </div>
+                        <div class="torn-edge"></div>
+                    </div>
+                    <div class="pushpin"></div>
+                </div>
+                <div id="about-frame-component" class="frame frame-3">
+                    <div class="frame-border-outer"></div>
+                    <div class="frame-border-inner"></div>
+                    <div class="frame-content">
+                        <div class="about-card">
+                            <h3>About Me</h3>
+                            <p>Hi! I'm Emily Do, an undergraduate at Stanford University studying Mathematics & CS
+                                (systems track).</p>
+                            <p>Driven by translating complex analytical models into intuitive, impactful user
+                                experiences.</p>
+                            <p>Off-screen: restaurants + matcha cafes, bay area hikes, scrapbooks and crafts from dorm
+                                room scraps.</p>
+                        </div>
+                    </div>
+                    <div class="pushpin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

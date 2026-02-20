@@ -1,0 +1,42 @@
+{"location":"script.js:459","message":"DOMContentLoaded fired","data":{"timestamp":1771569000784},"timestamp":1771569000784,"hypothesisId":"E"}
+{"location":"script.js:465","message":"Before gsap.set world","data":{"worldExists":true,"currentTransform":""},"timestamp":1771569000785,"hypothesisId":"A"}
+{"location":"script.js:479","message":"Before initLoadAnimation","data":{"timestamp":1771569000786},"timestamp":1771569000786,"hypothesisId":"D"}
+{"location":"script.js:475","message":"After gsap.set world","data":{"transform":"matrix(1, 0, 0, 1, 0, 0)","worldX":"translate(0vw, 0vh)"},"timestamp":1771569000887,"hypothesisId":"A"}
+{"location":"script.js:487","message":"After initLoadAnimation - element states","data":{"titleOpacity":"1","titleVisible":"visible","navButtonsCount":4,"deskOpacity":"1"},"timestamp":1771569002794,"hypothesisId":"B"}
+{"location":"script.js:510","message":"Final state check","data":{"worldTransform":"translate(0vw, 0vh)","worldRect":{"x":0,"y":0,"width":6583.33349609375,"height":2353.33349609375},"homeRect":{"x":2633.33349609375,"y":784.4444580078125,"width":1316.666748046875,"height":784.4444580078125},"homeVisible":false},"timestamp":1771569003296,"hypothesisId":"A"}
+{"location":"script.js:459","message":"DOMContentLoaded fired","data":{"timestamp":1771569019738},"timestamp":1771569019738,"hypothesisId":"E"}
+{"location":"script.js:392","message":"initLoadAnimation called","data":{"timestamp":1771569019740},"timestamp":1771569019740,"hypothesisId":"D"}
+{"location":"script.js:399","message":"Elements found","data":{"titleFound":true,"navButtonsCount":4,"deskFound":true,"deskObjectsCount":6},"timestamp":1771569019740,"hypothesisId":"E"}
+{"location":"script.js:465","message":"Before gsap.set world","data":{"worldExists":true,"currentTransform":""},"timestamp":1771569019739,"hypothesisId":"A"}
+{"location":"script.js:479","message":"Before initLoadAnimation","data":{"timestamp":1771569019739},"timestamp":1771569019739,"hypothesisId":"D"}
+{"location":"script.js:475","message":"After gsap.set world","data":{"transform":"matrix(1, 0, 0, 1, 0, 0)","worldX":"translate(0vw, 0vh)"},"timestamp":1771569019841,"hypothesisId":"A"}
+{"location":"script.js:408","message":"Title animation complete","data":{"finalOpacity":"1"},"timestamp":1771569020747,"hypothesisId":"B"}
+{"location":"script.js:420","message":"Nav buttons animation complete","data":{"finalOpacity":"1"},"timestamp":1771569021248,"hypothesisId":"B"}
+{"location":"script.js:433","message":"Desk animation complete","data":{"finalOpacity":"1"},"timestamp":1771569021348,"hypothesisId":"B"}
+{"location":"script.js:448","message":"Desk objects animation complete","data":{"finalOpacity":"1"},"timestamp":1771569021647,"hypothesisId":"B"}
+{"location":"script.js:487","message":"After initLoadAnimation - element states","data":{"titleOpacity":"1","titleVisible":"visible","navButtonsCount":4,"deskOpacity":"1"},"timestamp":1771569021743,"hypothesisId":"B"}
+{"location":"script.js:510","message":"Final state check","data":{"worldTransform":"translate(0vw, 0vh)","worldRect":{"x":0,"y":0,"width":6583.33349609375,"height":2353.33349609375},"homeRect":{"x":2633.33349609375,"y":784.4444580078125,"width":1316.666748046875,"height":784.4444580078125},"homeVisible":false},"timestamp":1771569022244,"hypothesisId":"A"}
+{"location":"script.js:459","message":"DOMContentLoaded fired","data":{"timestamp":1771569056912},"timestamp":1771569056912,"hypothesisId":"E"}
+{"location":"script.js:392","message":"initLoadAnimation called","data":{"timestamp":1771569056914},"timestamp":1771569056914,"hypothesisId":"D"}
+{"location":"script.js:465","message":"Before gsap.set world","data":{"worldExists":true,"currentTransform":""},"timestamp":1771569056912,"hypothesisId":"A"}
+{"location":"script.js:399","message":"Elements found","data":{"titleFound":true,"navButtonsCount":4,"deskFound":true,"deskObjectsCount":6},"timestamp":1771569056914,"hypothesisId":"E"}
+{"location":"script.js:479","message":"Before initLoadAnimation","data":{"timestamp":1771569056914},"timestamp":1771569056914,"hypothesisId":"D"}
+{"location":"script.js:475","message":"After gsap.set world (FIXED)","data":{"transform":"matrix(1, 0, 0, 1, -2633.33, -784.444)","worldX":"translate(-200vw, -100vh)"},"timestamp":1771569057014,"hypothesisId":"A","runId":"post-fix"}
+{"location":"script.js:408","message":"Title animation complete","data":{"finalOpacity":"1"},"timestamp":1771569057897,"hypothesisId":"B"}
+{"location":"script.js:420","message":"Nav buttons animation complete","data":{"finalOpacity":"1"},"timestamp":1771569058398,"hypothesisId":"B"}
+{"location":"script.js:433","message":"Desk animation complete","data":{"finalOpacity":"1"},"timestamp":1771569058498,"hypothesisId":"B"}
+{"location":"script.js:448","message":"Desk objects animation complete","data":{"finalOpacity":"1"},"timestamp":1771569058798,"hypothesisId":"B"}
+{"location":"script.js:487","message":"After initLoadAnimation - element states","data":{"titleOpacity":"1","titleVisible":"visible","navButtonsCount":4,"deskOpacity":"1"},"timestamp":1771569058916,"hypothesisId":"B"}
+{"location":"script.js:510","message":"Final state check","data":{"worldTransform":"translate(-200vw, -100vh)","worldRect":{"x":-2633.33349609375,"y":-784.4444580078125,"width":6583.33349609375,"height":2353.33349609375},"homeRect":{"x":0,"y":0,"width":1316.666748046875,"height":784.4444580078125},"homeVisible":true},"timestamp":1771569059418,"hypothesisId":"A"}
+{"location":"script.js:459","message":"DOMContentLoaded fired","data":{"timestamp":1771569063640},"timestamp":1771569063640,"hypothesisId":"E"}
+{"location":"script.js:465","message":"Before gsap.set world","data":{"worldExists":true,"currentTransform":""},"timestamp":1771569063641,"hypothesisId":"A"}
+{"location":"script.js:479","message":"Before initLoadAnimation","data":{"timestamp":1771569063655},"timestamp":1771569063655,"hypothesisId":"D"}
+{"location":"script.js:392","message":"initLoadAnimation called","data":{"timestamp":1771569063656},"timestamp":1771569063656,"hypothesisId":"D"}
+{"location":"script.js:399","message":"Elements found","data":{"titleFound":true,"navButtonsCount":4,"deskFound":true,"deskObjectsCount":6},"timestamp":1771569063656,"hypothesisId":"E"}
+{"location":"script.js:475","message":"After gsap.set world (FIXED)","data":{"transform":"matrix(1, 0, 0, 1, -2633.33, -784.444)","worldX":"translate(-200vw, -100vh)"},"timestamp":1771569063756,"hypothesisId":"A","runId":"post-fix"}
+{"location":"script.js:408","message":"Title animation complete","data":{"finalOpacity":"1"},"timestamp":1771569064648,"hypothesisId":"B"}
+{"location":"script.js:420","message":"Nav buttons animation complete","data":{"finalOpacity":"1"},"timestamp":1771569065148,"hypothesisId":"B"}
+{"location":"script.js:433","message":"Desk animation complete","data":{"finalOpacity":"1"},"timestamp":1771569065248,"hypothesisId":"B"}
+{"location":"script.js:448","message":"Desk objects animation complete","data":{"finalOpacity":"1"},"timestamp":1771569065548,"hypothesisId":"B"}
+{"location":"script.js:487","message":"After initLoadAnimation - element states","data":{"titleOpacity":"1","titleVisible":"visible","navButtonsCount":4,"deskOpacity":"1"},"timestamp":1771569065659,"hypothesisId":"B"}
+{"location":"script.js:510","message":"Final state check (FIXED)","data":{"worldTransform":"translate(-200vw, -100vh)","worldRect":{"x":-2633.33349609375,"y":-784.4444580078125,"width":6583.33349609375,"height":2353.33349609375},"homeRect":{"x":0,"y":0,"width":1316.666748046875,"height":784.4444580078125},"homeVisible":true},"timestamp":1771569066160,"hypothesisId":"A","runId":"post-fix"}
